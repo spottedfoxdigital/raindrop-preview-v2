@@ -15,7 +15,7 @@
 "areaServed":"Yakima County, WA","openingHours":"Mo-Fr 08:30-17:00"}
 </script>
 <style>
-:root{--orange:#B85409;--orange-d:#9A4508;--green:#1F5E2E;--leaf:#2E7D32;--mist:#EEF4EF;--cream:#FBF8F3;--ink:#1C2420;--slate:#4F5A54;--sand:#E4DED3}
+:root{--green-d:#174A24;--green:#1F5E2E;--leaf:#2E7D32;--mist:#EEF4EF;--cream:#FBF8F3;--ink:#1C2420;--slate:#4F5A54;--sand:#E4DED3}
 *{box-sizing:border-box}
 body{margin:0;font:400 1.0625rem/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);padding-bottom:72px}
 img{max-width:100%;height:auto;display:block}
@@ -30,17 +30,16 @@ p{margin:0}
 .lead{color:var(--slate);max-width:560px;margin-bottom:32px}
 .eyebrow{font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
 .btn{display:inline-flex;align-items:center;gap:10px;font:600 1.05rem/1 Inter,sans-serif;padding:16px 28px;border-radius:8px;text-decoration:none;border:2px solid transparent;transition:background .15s}
-.btn-primary{background:var(--orange);color:#fff}
-.btn-primary:hover{background:var(--orange-d)}
-.btn-secondary{border-color:var(--green);color:var(--green);background:transparent}
-.btn-secondary:hover{background:var(--mist)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-d)}
+.btn-secondary{border-color:var(--ink);color:var(--ink);background:#fff}
+.btn-secondary:hover{background:var(--cream)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .btn svg{width:20px;height:20px;fill:currentColor}
-.preview{font-size:.8rem;color:var(--slate);text-align:center;padding:6px;margin:0;background:#fff}
 header{background:#fff;border-bottom:1px solid var(--sand)}
-header .w{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
-header img{width:180px}
-header .tel{display:none;color:var(--ink);font-weight:600;text-decoration:none}
+header .w{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px}
+header img{width:270px}
+header .tel{display:none;color:var(--green);font-weight:600;font-size:1.15rem;text-decoration:none}header .tel:hover{color:var(--green-d);text-decoration:underline}
 .hero{padding:40px 0 64px;background:#fff}
 .hero .w{display:grid;gap:36px}
 .hero p.sub{color:var(--slate);margin:16px 0 28px;font-size:1.125rem}
@@ -70,12 +69,12 @@ cite{display:block;margin-top:12px;font-style:normal;color:var(--slate);font-siz
 .cta{text-align:center}
 .cta .lead{margin:0 auto 28px}
 footer{background:var(--green);color:#fff;padding:40px 0;font-size:.95rem}
-footer a{color:#fff}
+footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
 .sticky{position:fixed;left:12px;right:12px;bottom:12px;justify-content:center;z-index:9;box-shadow:0 4px 14px rgba(0,0,0,.25)}
 @media(min-width:760px){
  body{padding-bottom:0}.sticky{display:none}
  section{padding:104px 0}h1{font-size:3.25rem}h2{font-size:2.25rem}
- header .tel{display:inline}
+ header .tel{display:inline}header img{width:320px}
  .hero{padding:72px 0 104px}.hero .w{grid-template-columns:1.05fr 1fr;align-items:center;gap:56px}
  .services{grid-template-columns:repeat(3,1fr)}
  .more ul{grid-template-columns:repeat(3,1fr);gap:24px}
@@ -86,7 +85,6 @@ footer a{color:#fff}
 </style>
 </head>
 <body>
-<p class="preview">Preview site. Brand colors are placeholders.</p>
 <header><div class="w">
  <img src="assets/raindrop-logo-300.webp" srcset="assets/raindrop-logo-300.webp 1x, assets/raindrop-logo-600.webp 2x" width="300" height="69" alt="Raindrop Cleaning LLC: A clean you can trust!">
  <a class="tel" href="tel:+15098338257">509-833-8257</a>
