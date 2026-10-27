@@ -52,8 +52,11 @@ header .tel{display:none;color:var(--green);font-weight:600;font-size:1.15rem;te
 picture{display:block}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%}
 .card img.fit{aspect-ratio:auto;height:auto;object-fit:contain}
-.more picture{aspect-ratio:4/3;margin-bottom:12px;overflow:hidden;position:relative}
+.more picture,.more .graphic{display:block;width:100%;aspect-ratio:4/3;margin:0 0 12px;overflow:hidden}
+.more picture{position:relative}
 .more picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 92%}
+.more .graphic{border-radius:12px;background:var(--mist);border:1px solid var(--sand)}
+.more .graphic svg{display:block;width:100%;height:100%}
 .card .t{padding:20px 22px 24px}
 .card p{color:var(--slate);font-size:.98rem}
 .more{margin-top:24px;background:#fff;border:1px solid var(--sand);border-radius:12px;padding:24px 22px}
@@ -121,8 +124,8 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
  </div>
  <div class="more"><h3>Also available</h3><ul>
   <li><picture><source srcset="assets/hard-floor-tile-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/hard-floor-tile-cleaning-yakima-wa.jpg" width="1201" height="1600" loading="lazy" alt="Raindrop Cleaning technician cleaning a tile floor with a spinner tool"></picture><b>Tile and grout</b><span>Cleaning for tile floors and grout lines.</span></li>
-  <li><b>Carpet dyeing</b><span>Color repair for bleach spots and fading.</span></li>
-  <li><b>Area rug cleaning</b><span>Cleaning for area rugs.</span></li>
+  <li><div class="graphic" role="img" aria-label="Dye drop over a light spot on a carpet swatch"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-hidden="true" focusable="false"><rect width="400" height="300" fill="#EEF4EF"/><path d="M292 34c12 18 20 30 20 46a20 20 0 1 1-40 0c0-16 8-28 20-46z" fill="#2E7D32" stroke="#174A24" stroke-width="2"/><rect x="48" y="132" width="304" height="122" rx="10" fill="#FBF8F3" stroke="#1F5E2E" stroke-width="3"/><g stroke="#2E7D32" stroke-width="2" opacity="0.45"><path d="M72 162h256"/><path d="M72 184h256"/><path d="M72 206h256"/><path d="M72 228h256"/></g><circle cx="292" cy="196" r="22" fill="#FFFFFF" stroke="#1F5E2E" stroke-width="3"/></svg></div><b>Carpet dyeing</b><span>Color repair for bleach spots and fading.</span></li>
+  <li><div class="graphic" role="img" aria-label="Fringed rug"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" aria-hidden="true" focusable="false"><rect width="400" height="300" fill="#EEF4EF"/><g stroke="#1F5E2E" stroke-width="3" stroke-linecap="round"><path d="M128 40v28M160 40v28M192 40v28M224 40v28M256 40v28M288 40v28"/></g><rect x="108" y="68" width="200" height="152" rx="4" fill="#FBF8F3" stroke="#1F5E2E" stroke-width="3"/><rect x="124" y="84" width="168" height="120" fill="none" stroke="#2E7D32" stroke-width="2.5"/><rect x="142" y="102" width="132" height="84" fill="#EEF4EF" stroke="#1F5E2E" stroke-width="2"/><g stroke="#1F5E2E" stroke-width="3" stroke-linecap="round"><path d="M128 220v28M160 220v28M192 220v28M224 220v28M256 220v28M288 220v28"/></g></svg></div><b>Area rug cleaning</b><span>Cleaning for area rugs.</span></li>
  </ul></div>
 </div></section>
 
