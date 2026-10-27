@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Raindrop Cleaning","telephone":"+1-509-833-8257","url":"https://raindropcleaning.net/",
-"address":{"@type":"PostalAddress","streetAddress":"4401 West Walnut Street","addressLocality":"Yakima","addressRegion":"WA","postalCode":"98908","addressCountry":"US"},
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Raindrop Cleaning","foundingDate":"2008","telephone":"+1-509-833-8257","url":"https://raindropcleaning.net/",
+"address":{"@type":"PostalAddress","streetAddress":"4401 W. Walnut St","addressLocality":"Yakima","addressRegion":"WA","postalCode":"98908","addressCountry":"US"},
 "areaServed":"Yakima County, WA","openingHours":"Mo-Fr 08:30-17:00"}
 </script>
 <style>
@@ -49,7 +49,10 @@ header .tel{display:none;color:var(--green);font-weight:600;font-size:1.15rem;te
 .trust .logos img{flex:none;max-width:none;object-fit:contain}.trust .logos img[alt=IICRC]{height:40px}.trust .dye img{height:15px}.trust .dye{flex:none;background:var(--ink);padding:6px 10px;border-radius:6px}
 .services{display:grid;gap:24px}
 .card{background:#fff;border:1px solid var(--sand);border-radius:12px;overflow:hidden}
+picture{display:block}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card img.fit{aspect-ratio:auto;height:auto;object-fit:contain}
+.more picture{margin-bottom:12px}
 .card .t{padding:20px 22px 24px}
 .card p{color:var(--slate);font-size:.98rem}
 .more{margin-top:24px;background:#fff;border:1px solid var(--sand);border-radius:12px;padding:24px 22px}
@@ -96,7 +99,7 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
  <div>
   <p class="eyebrow">Yakima County, WA</p>
   <h1>Carpet and upholstery cleaning you can trust</h1>
-  <p class="sub">Owned and operated by James and Renee Hughes. IICRC certified. Residential and commercial.</p>
+  <p class="sub">Locally owned and operated by James and Renee Hughes, and lead tech Joel Nateras. IICRC certified. We service residential and commercial.</p>
   <a class="btn btn-primary" href="tel:+15098338257"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call 509-833-8257</a>
   <p class="hours">Free estimates. Mon to Fri, 8:30 AM to 5:00 PM.</p>
   <ul class="trust">
@@ -111,14 +114,14 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
  <h2>Services</h2>
  <p class="lead">We come to your home or business.</p>
  <div class="services">
-  <div class="card"><img src="assets/carpet-cleaning-wand-james-400.webp" srcset="assets/carpet-cleaning-wand-james-400.webp 400w, assets/carpet-cleaning-wand-james-600.webp 600w" sizes="(min-width:760px) 340px, 100vw" width="400" height="300" loading="lazy" alt="Extraction wand cleaning a carpet"><div class="t"><h3>Carpet cleaning</h3><p>Hot water extraction to lift dirt, stains and odors.</p></div></div>
-  <div class="card"><img src="assets/upholstery-before-after-james-400.webp" srcset="assets/upholstery-before-after-james-400.webp 400w, assets/upholstery-before-after-james-600.webp 600w" sizes="(min-width:760px) 340px, 100vw" width="400" height="300" loading="lazy" alt="Upholstery tool leaving a clean stripe across a dirty gray chair"><div class="t"><h3>Upholstery cleaning</h3><p>Sofas, chairs and fabric furniture. One pass on a customer's chair shows the difference.</p></div></div>
-  <div class="card"><img src="assets/carpet-stretching-james-400.webp" srcset="assets/carpet-stretching-james-400.webp 400w, assets/carpet-stretching-james-600.webp 600w" sizes="(min-width:760px) 340px, 100vw" width="400" height="300" loading="lazy" alt="James re-stretching carpet along a wall with a power stretcher"><div class="t"><h3>Carpet repair and stretching</h3><p>Patches, seams, and re-stretching for wrinkles and ripples.</p></div></div>
+  <div class="card"><picture><source srcset="assets/carpet-cleaning-technician-yakima-wa.webp" type="image/webp"><img class="fit" src="assets/carpet-cleaning-technician-yakima-wa.jpg" width="914" height="1142" loading="lazy" alt="Raindrop Cleaning technician cleaning hallway carpet with a wand"></picture><div class="t"><h3>Carpet cleaning</h3><p>Hot water extraction to lift dirt, stains and odors.</p></div></div>
+  <div class="card"><picture><source srcset="assets/upholstery-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/upholstery-cleaning-yakima-wa.jpg" width="1200" height="900" loading="lazy" alt="Upholstery cleaning on a tan fabric chair showing a clean stripe, Raindrop Cleaning, Yakima WA"></picture><picture><source srcset="assets/upholstery-cleaning-sofa-yakima-wa.webp" type="image/webp"><img src="assets/upholstery-cleaning-sofa-yakima-wa.jpg" width="1536" height="1152" loading="lazy" alt="Raindrop Cleaning technician cleaning a fabric sofa in a Yakima home"></picture><div class="t"><h3>Upholstery cleaning</h3><p>Sofas, chairs and fabric furniture. One pass on a customer's chair shows the difference.</p></div></div>
+  <div class="card"><picture><source srcset="assets/carpet-repair-patch-yakima-wa.webp" type="image/webp"><img src="assets/carpet-repair-patch-yakima-wa.jpg" width="1000" height="750" loading="lazy" alt="Carpet patch repair at a doorway with a knee kicker and carpet tools"></picture><picture><source srcset="assets/carpet-repair-seam-doorway-yakima-wa.webp" type="image/webp"><img class="fit" src="assets/carpet-repair-seam-doorway-yakima-wa.jpg" width="900" height="1200" loading="lazy" alt="Carpet seam repair at a doorway with carpet repair tools"></picture><div class="t"><h3>Carpet repair and stretching</h3><p>Patches, seams, and re-stretching for wrinkles and ripples.</p></div></div>
  </div>
  <div class="more"><h3>Also available</h3><ul>
-  <li><b>Tile and grout</b><span>Cleaning for tile floors and grout lines.</span></li>
+  <li><picture><source srcset="assets/hard-floor-tile-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/hard-floor-tile-cleaning-yakima-wa.jpg" width="1201" height="1600" loading="lazy" alt="Raindrop Cleaning technician cleaning a tile floor with a spinner tool"></picture><b>Tile and grout</b><span>Cleaning for tile floors and grout lines.</span></li>
   <li><b>Carpet dyeing</b><span>Color repair for bleach spots and fading.</span></li>
-  <li><b>Area rug cleaning and repair</b><span>Cleaning and repair for area rugs.</span></li>
+  <li><b>Area rug cleaning</b><span>Cleaning for area rugs.</span></li>
  </ul></div>
 </div></section>
 
@@ -127,9 +130,9 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
  <div>
   <p class="eyebrow">Family-run in Yakima</p>
   <h2>Meet James and Renee</h2>
-  <p class="lead" style="margin-bottom:0">Raindrop Cleaning is owned and operated by James and Renee Hughes. Our lead technician is Joel Nateras. Getting started is simple:</p>
+  <p class="lead" style="margin-bottom:0">Raindrop Cleaning is owned and operated by James and Renee Hughes. Our lead technician is Joel Nateras. In business since 2008. Getting started is simple:</p>
   <ol class="steps">
-   <li><span><b>Call.</b> Let us know what needs cleaning or repair.</span></li>
+   <li><span>Let us know what needs cleaning or repair.</span></li>
    <li><span><b>We clean.</b> We come to your home or business and do the work.</span></li>
    <li><span><b>Enjoy.</b> Enjoy cleaner carpets and furniture.</span></li>
   </ol>
@@ -148,12 +151,12 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
 
 <section class="cta"><div class="w">
  <h2>Ready for cleaner carpets?</h2>
- <p class="lead">Serving Yakima and surrounding Yakima County. Free quotes, Mon to Fri, 8:30 AM to 5:00 PM.</p>
+ <p class="lead">Serving Yakima and surrounding Yakima County. Free estimates, Mon to Fri, 8:30 AM to 5:00 PM.</p>
  <a class="btn btn-primary" href="tel:+15098338257"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call 509-833-8257</a>
 </div></section>
 
 <footer><div class="w">
- <strong>Raindrop Cleaning</strong><br>4401 West Walnut Street, Yakima, WA 98908<br><a href="tel:+15098338257">509-833-8257</a><br>&copy; 2026 Raindrop Cleaning
+ <strong>Raindrop Cleaning</strong><br>4401 W. Walnut St, Yakima, WA 98908<br><a href="tel:+15098338257">509-833-8257</a><br>&copy; 2026 Raindrop Cleaning
 </div></footer>
 <a class="btn btn-primary sticky" href="tel:+15098338257"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call 509-833-8257</a>
 </body>
