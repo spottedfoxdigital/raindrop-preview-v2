@@ -51,7 +51,7 @@ header .tel{display:none;color:var(--green);font-weight:600;font-size:1.15rem;te
 .card{background:#fff;border:1px solid var(--sand);border-radius:12px;overflow:hidden}
 picture{display:block}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.card img.fit{aspect-ratio:auto;height:auto;object-fit:contain}
+.card > picture:only-of-type img{aspect-ratio:2/3}/* one photo, same height as two 4:3 photos */
 .more picture,.more .graphic{display:block;width:100%;aspect-ratio:4/3;margin:0 0 12px;overflow:hidden}
 .more picture{position:relative}
 .more picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 92%}
