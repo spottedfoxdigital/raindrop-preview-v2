@@ -55,17 +55,10 @@ header .tel{display:none;color:var(--green);font-weight:600;font-size:1.15rem;te
 picture{display:block}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%}
 .card > picture:only-of-type img{aspect-ratio:2/3}/* one photo, same height as two 4:3 photos */
-.more picture,.more .graphic{display:block;width:100%;aspect-ratio:4/3;margin:0 0 12px;overflow:hidden}
-.more picture{position:relative}
-.more picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 92%}
-.more .graphic{border-radius:12px;background:var(--mist);border:1px solid var(--sand)}
-.more .graphic svg{display:block;width:100%;height:100%}
+.shot{position:relative;margin:0}
+.shot figcaption{position:absolute;top:10px;left:10px;background:var(--ink);color:#fff;font:600 .8rem/1 Inter,system-ui,sans-serif;padding:6px 9px;border-radius:6px;white-space:nowrap}
 .card .t{padding:20px 22px 24px}
 .card p{color:var(--slate);font-size:.98rem}
-.more{margin-top:24px;background:#fff;border:1px solid var(--sand);border-radius:12px;padding:24px 22px}
-.more ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:14px}
-.more li b{display:block}
-.more li span{color:var(--slate);font-size:.98rem}
 .about{display:grid;gap:36px;align-items:center}
 .about img{border-radius:12px}
 .steps{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:14px;counter-reset:s}
@@ -86,7 +79,6 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
  header .tel{display:inline}header img{width:320px}
  .hero{padding:72px 0 104px}.hero .w{grid-template-columns:1.05fr 1fr;align-items:center;gap:56px}
  .services{grid-template-columns:repeat(3,1fr)}
- .more ul{grid-template-columns:repeat(3,1fr);gap:24px}
  .about{grid-template-columns:1fr 1fr;gap:64px}
  .quotes{grid-template-columns:repeat(3,1fr)}
 }
@@ -127,12 +119,10 @@ footer a{color:#fff}a[href^="tel:"]:not(.btn){font-weight:600}
   <div class="card"><picture><source srcset="assets/carpet-cleaning-technician-yakima-wa.webp" type="image/webp"><img class="fit" src="assets/carpet-cleaning-technician-yakima-wa.jpg" width="914" height="1142" loading="lazy" alt="Raindrop Cleaning technician cleaning hallway carpet with a wand"></picture><div class="t"><h3>Carpet cleaning</h3><p>Steam cleaning with hot water steam extraction to lift dirt, stains and odors.</p></div></div>
   <div class="card"><picture><source srcset="assets/upholstery-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/upholstery-cleaning-yakima-wa.jpg" width="1200" height="900" loading="lazy" alt="Upholstery cleaning on a tan fabric chair showing a clean stripe, Raindrop Cleaning, Yakima WA"></picture><picture><source srcset="assets/upholstery-cleaning-sofa-yakima-wa.webp" type="image/webp"><img src="assets/upholstery-cleaning-sofa-yakima-wa.jpg" width="1536" height="1152" loading="lazy" alt="Raindrop Cleaning technician cleaning a fabric sofa in a Yakima home"></picture><div class="t"><h3>Upholstery cleaning</h3><p>Sofas, chairs and fabric furniture. One pass on a customer's chair shows the difference.</p></div></div>
   <div class="card"><picture><source srcset="assets/carpet-repair-patch-yakima-wa.webp" type="image/webp"><img src="assets/carpet-repair-patch-yakima-wa.jpg" width="1000" height="750" loading="lazy" alt="Carpet patch repair at a doorway with a knee kicker and carpet tools"></picture><picture><source srcset="assets/carpet-repair-seam-doorway-yakima-wa.webp" type="image/webp"><img class="fit" src="assets/carpet-repair-seam-doorway-yakima-wa.jpg" width="900" height="1200" loading="lazy" alt="Carpet seam repair at a doorway with carpet repair tools"></picture><div class="t"><h3>Carpet repair and stretching</h3><p>Patches, seams, doorways and transitions, and re-stretching for wrinkles, ripples and loose carpet.</p></div></div>
+  <div class="card"><figure class="shot"><picture><source srcset="assets/carpet-dyeing-bleach-before-yakima-wa.webp" type="image/webp"><img src="assets/carpet-dyeing-bleach-before-yakima-wa.jpg" width="800" height="600" loading="lazy" alt="Carpet with a bleach spot before color repair"></picture><figcaption>Before</figcaption></figure><figure class="shot"><picture><source srcset="assets/carpet-dyeing-bleach-after-yakima-wa.webp" type="image/webp"><img src="assets/carpet-dyeing-bleach-after-yakima-wa.jpg" width="800" height="600" loading="lazy" alt="Same carpet after Raindrop color repair"></picture><figcaption>After</figcaption></figure><div class="t"><h3>Carpet dyeing</h3><p>Bleach spot and fading repair with color correction.</p></div></div>
+  <div class="card"><picture><source srcset="assets/area-rug-living-room-yakima-wa.webp" type="image/webp"><img src="assets/area-rug-living-room-yakima-wa.jpg" width="800" height="1200" loading="lazy" alt="Patterned area rug in a living room after cleaning"></picture><div class="t"><h3>Area rug cleaning</h3><p>We clean synthetic and natural fibers.</p></div></div>
+  <div class="card"><picture><source srcset="assets/hard-floor-tile-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/hard-floor-tile-cleaning-yakima-wa.jpg" width="800" height="1200" loading="lazy" alt="Raindrop Cleaning technician cleaning a tile floor with a spinner tool"></picture><div class="t"><h3>Tile and grout</h3><p>Cleaning for tile floors, grout lines and most other hard-surface floors, including LVP.</p></div></div>
  </div>
- <div class="more"><h3>Also available</h3><ul>
-  <li><picture><source srcset="assets/hard-floor-tile-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/hard-floor-tile-cleaning-yakima-wa.jpg" width="1201" height="1600" loading="lazy" alt="Raindrop Cleaning technician cleaning a tile floor with a spinner tool"></picture><b>Tile and grout</b><span>Cleaning for tile floors, grout lines and most other hard-surface floors, including LVP.</span></li>
-  <li><picture><source srcset="assets/carpet-dyeing-stain-color-repair-yakima-wa.webp" type="image/webp"><img src="assets/carpet-dyeing-stain-color-repair-yakima-wa.jpg" width="800" height="600" loading="lazy" alt="Gloved hands treating a red stain on beige carpet before color repair" style="object-position:center"></picture><b>Carpet dyeing</b><span>Bleach spot and fading repair with color correction.</span></li>
-  <li><picture><source srcset="assets/area-rug-cleaning-yakima-wa.webp" type="image/webp"><img src="assets/area-rug-cleaning-yakima-wa.jpg" width="800" height="600" loading="lazy" alt="Cleaning wand extracting dirt from a patterned area rug" style="object-position:center"></picture><b>Area rug cleaning</b><span>We clean synthetic and natural fibers.</span></li>
- </ul></div>
 </div></section>
 
 <section><div class="w about">
